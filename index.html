@@ -3,67 +3,76 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>رقية سامي الرفاعي | سيرة ذاتية</title>
+<title>مزاج | كوفي</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Tahoma,Arial}
-body{background:#f4f6fb;color:#1e293b}
-.header{background:linear-gradient(135deg,#0f2a4d,#1b4f72);color:#fff;padding:50px 20px;text-align:center}
-.header h1{font-size:34px;margin-bottom:8px}
-.header h2{font-size:18px;font-weight:400;color:#f1c40f}
-.header p{margin-top:12px;opacity:.9}
-.container{max-width:900px;margin:30px auto;padding:0 15px}
-.card{background:#fff;border-radius:16px;padding:25px;margin-bottom:20px;box-shadow:0 4px 15px rgba(0,0,0,.08);border-top:4px solid #f1c40f}
-.card h3{color:#0f2a4d;margin-bottom:15px;font-size:20px;border-bottom:2px solid #eee;padding-bottom:8px}
-.card p,.card li{line-height:1.9;font-size:16px}
-ul{padding-right:20px}
-.skills{display:flex;flex-wrap:wrap;gap:10px}
-.skills span{background:#eaf2f8;color:#0f2a4d;padding:8px 16px;border-radius:20px;font-weight:600;font-size:14px}
-.footer{text-align:center;padding:20px;color:#64748b;font-size:14px}
+body{background:#fdf8f3;color:#3e2723}
+.header{position:relative;color:#fff;text-align:center;padding:90px 20px;background:url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1600&q=80') center/cover}
+.header:before{content:'';position:absolute;inset:0;background:rgba(62,39,35,.78)}
+.header>*{position:relative}
+.header h1{font-size:56px;color:#d7a86e}
+.header p{font-size:20px;margin-top:10px}
+.btn{background:#d7a86e;color:#3e2723;padding:12px 30px;border-radius:30px;font-weight:bold;display:inline-block;margin-top:20px;text-decoration:none}
+.container{max-width:1000px;margin:30px auto;padding:0 15px}
+.card{background:#fff;border-radius:20px;padding:25px;margin-bottom:25px;box-shadow:0 5px 18px rgba(0,0,0,.1)}
+.card h3{font-size:24px;margin-bottom:20px;border-bottom:2px solid #efebe9;padding-bottom:10px}
+.menu{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.item{border:1px solid #efebe9;border-radius:16px;overflow:hidden;background:#fff}
+.item img{width:100%;height:170px;object-fit:cover}
+.item div{padding:14px}
+.item b{font-size:17px}
+.item small{color:#8d6e63;display:block;margin:5px 0}
+.price{color:#6d4c41;font-weight:bold;font-size:18px}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.gallery img{width:100%;height:200px;object-fit:cover;border-radius:14px}
+.footer{text-align:center;padding:25px;color:#8d6e63}
+@media(max-width:700px){.menu,.gallery{grid-template-columns:1fr 1fr}.header h1{font-size:40px}}
 </style>
 </head>
 <body>
 <div class="header">
-<h1>رقية سامي الرفاعي</h1>
-<h2>بكالوريوس اقتصاد وإدارة أعمال | طالبة ماجستير ذكاء اصطناعي</h2>
-<p>جدة، المملكة العربية السعودية</p>
+<h1>مِزاج ☕</h1>
+<p>قهوتك على مزاجك.. كل شي تحبه في مكان واحد</p>
+<a class="btn" href="#menu">شوف المنيو</a>
 </div>
-<div class="container">
+<div class="container" id="menu">
 <div class="card">
-<h3>نبذة عني</h3>
-<p>حاصلة على بكالوريوس في الاقتصاد وإدارة الأعمال، وطالبة ماجستير في الذكاء الاصطناعي حالياً. أتميز بسرعة تلقي المعلومة وتنفيذها بكفاءة عالية، مع قدرة ممتازة على التعامل مع الأجهزة والبرامج واستعمال برامج الأوفيس بمرونة واحترافية.</p>
-</div>
-<div class="card">
-<h3>التعليم</h3>
-<ul>
-<li><b>ماجستير في الذكاء الاصطناعي</b> - طالبة حالياً</li>
-<li><b>بكالوريوس في الاقتصاد وإدارة الأعمال</b></li>
-</ul>
-</div>
-<div class="card">
-<h3>المهارات</h3>
-<div class="skills">
-<span>سرعة التعلم والتنفيذ</span>
-<span>Microsoft Word</span>
-<span>Microsoft Office</span>
-<span>استعمال الأجهزة بمرونة</span>
-<span>إدارة الوقت</span>
-<span>اختيار وإدارة المشاريع</span>
-<span>ذكاء اصطناعي</span>
+<h3>☕ القهوة الساخنة</h3>
+<div class="menu">
+<div class="item"><img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&q=80"><div><b>لاتيه</b><small>حليب مبخر ورغوة ناعمة</small><span class="price">20 ر.س</span></div></div>
+<div class="item"><img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?w=600&q=80"><div><b>كابتشينو</b><small>رغوة غنية وكاكاو</small><span class="price">20 ر.س</span></div></div>
+<div class="item"><img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=600&q=80"><div><b>قهوة عربية</b><small>هيل وزعفران، دلة كاملة</small><span class="price">18 ر.س</span></div></div>
+<div class="item"><img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=600&q=80"><div><b>V60 مختصة</b><small>تقطير يدوي</small><span class="price">26 ر.س</span></div></div>
+<div class="item"><img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=600&q=80"><div><b>موكا</b><small>قهوة وشوكولاتة بلجيكية</small><span class="price">22 ر.س</span></div></div>
+<div class="item"><img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?w=600&q=80"><div><b>اسبريسو</b><small>مركز وقوي</small><span class="price">14 ر.س</span></div></div>
 </div>
 </div>
 <div class="card">
-<h3>الدورات التدريبية</h3>
-<ul>
-<li>دورة إدارة الوقت</li>
-<li>دورة اختيار المشاريع</li>
-<li>دورات أخرى متنوعة في الإدارة والتطوير</li>
-</ul>
+<h3>🧊 مشروبات باردة</h3>
+<div class="menu">
+<div class="item"><img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=600&q=80"><div><b>آيس لاتيه</b><small>منعش وخفيف</small><span class="price">22 ر.س</span></div></div>
+<div class="item"><img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&q=80"><div><b>سبانيش لاتيه</b><small>حليب مكثف</small><span class="price">24 ر.س</span></div></div>
+<div class="item"><img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=600&q=80"><div><b>فرابتشينو كراميل</b><small>مثلج وحلو</small><span class="price">25 ر.س</span></div></div>
+</div>
 </div>
 <div class="card">
-<h3>تواصل معي</h3>
-<p>يسعدني التواصل بكم للفرص الوظيفية والتدريبية في مجالات إدارة الأعمال والذكاء الاصطناعي.</p>
+<h3>🍰 الحلا</h3>
+<div class="menu">
+<div class="item"><img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=600&q=80"><div><b>تشيز كيك لوتس</b><small>الأكثر طلباً</small><span class="price">28 ر.س</span></div></div>
+<div class="item"><img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=600&q=80"><div><b>براونيز دافئ</b><small>مع آيس كريم</small><span class="price">26 ر.س</span></div></div>
+<div class="item"><img src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?w=600&q=80"><div><b>تيراميسو</b><small>إيطالي أصلي</small><span class="price">30 ر.س</span></div></div>
 </div>
 </div>
-<div class="footer">© 2026 رقية سامي الرفاعي - جميع الحقوق محفوظة</div>
+<div class="card">
+<h3>📸 أجواء مزاج</h3>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=600&q=80">
+<img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=600&q=80">
+<img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=600&q=80">
+</div>
+<p style="text-align:center;line-height:2;margin-top:15px">جلسات هادية للشغل والدراسة، واي فاي سريع، وتوصيل لباب البيت. مفتوح يومياً 6 صباحاً - 12 منتصف الليل</p>
+</div>
+</div>
+<div class="footer">© 2026 كوفي مزاج - صُنع بحب ☕</div>
 </body>
 </html>
