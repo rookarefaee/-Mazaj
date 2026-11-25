@@ -3,76 +3,55 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>مزاج | كوفي</title>
+<title>مزاج | Mazaj</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Tahoma,Arial}
-body{background:#fdf8f3;color:#3e2723}
-.header{position:relative;color:#fff;text-align:center;padding:90px 20px;background:url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1600&q=80') center/cover}
-.header:before{content:'';position:absolute;inset:0;background:rgba(62,39,35,.78)}
-.header>*{position:relative}
-.header h1{font-size:56px;color:#d7a86e}
-.header p{font-size:20px;margin-top:10px}
-.btn{background:#d7a86e;color:#3e2723;padding:12px 30px;border-radius:30px;font-weight:bold;display:inline-block;margin-top:20px;text-decoration:none}
-.container{max-width:1000px;margin:30px auto;padding:0 15px}
-.card{background:#fff;border-radius:20px;padding:25px;margin-bottom:25px;box-shadow:0 5px 18px rgba(0,0,0,.1)}
-.card h3{font-size:24px;margin-bottom:20px;border-bottom:2px solid #efebe9;padding-bottom:10px}
-.menu{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.item{border:1px solid #efebe9;border-radius:16px;overflow:hidden;background:#fff}
-.item img{width:100%;height:170px;object-fit:cover}
-.item div{padding:14px}
-.item b{font-size:17px}
-.item small{color:#8d6e63;display:block;margin:5px 0}
-.price{color:#6d4c41;font-weight:bold;font-size:18px}
-.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-.gallery img{width:100%;height:200px;object-fit:cover;border-radius:14px}
-.footer{text-align:center;padding:25px;color:#8d6e63}
-@media(max-width:700px){.menu,.gallery{grid-template-columns:1fr 1fr}.header h1{font-size:40px}}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Tahoma,Arial}
+body{background:#fff8f0;color:#3e2723}
+header{background:#3e2723;color:#fff;padding:20px;text-align:center}
+header h1{font-size:42px}
+nav{background:#5d4037;padding:12px;text-align:center}
+nav a{color:#fff;text-decoration:none;margin:0 15px;font-weight:bold}
+.hero{padding:60px 20px;text-align:center;background:linear-gradient(#d7ccc8,#fff8f0)}
+.hero h2{font-size:36px;margin-bottom:15px}
+.hero p{font-size:18px;margin-bottom:25px}
+.btn{background:#6f4e37;color:#fff;padding:12px 30px;border-radius:25px;text-decoration:none;font-weight:bold}
+.section{padding:50px 20px;text-align:center}
+.section h2{font-size:30px;margin-bottom:30px;color:#6f4e37}
+.cards{display:flex;flex-wrap:wrap;gap:20px;justify-content:center}
+.card{background:#fff;width:260px;padding:25px;border-radius:15px;box-shadow:0 4px 12px rgba(0,0,0,.1)}
+.card .icon{font-size:50px}
+.card h3{margin:15px 0}
+.price{color:#6f4e37;font-weight:bold;font-size:20px}
+footer{background:#3e2723;color:#fff;text-align:center;padding:20px;margin-top:40px}
 </style>
 </head>
 <body>
-<div class="header">
-<h1>مِزاج ☕</h1>
-<p>قهوتك على مزاجك.. كل شي تحبه في مكان واحد</p>
-<a class="btn" href="#menu">شوف المنيو</a>
+<header><h1>☕ مزاج</h1><p>Mazaj Coffee</p></header>
+<nav><a href="#home">الرئيسية</a><a href="#menu">المنيو</a><a href="#about">عنا</a></nav>
+<div class="hero" id="home">
+<h2>أهلاً بكم في مزاج</h2>
+<p>قهوتك على مزاجك، نحمص ونقدم لك ألذ قهوة مختصة</p>
+<a href="#menu" class="btn">شوف المنيو</a>
 </div>
-<div class="container" id="menu">
-<div class="card">
-<h3>☕ القهوة الساخنة</h3>
-<div class="menu">
-<div class="item"><img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&q=80"><div><b>لاتيه</b><small>حليب مبخر ورغوة ناعمة</small><span class="price">20 ر.س</span></div></div>
-<div class="item"><img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?w=600&q=80"><div><b>كابتشينو</b><small>رغوة غنية وكاكاو</small><span class="price">20 ر.س</span></div></div>
-<div class="item"><img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=600&q=80"><div><b>قهوة عربية</b><small>هيل وزعفران، دلة كاملة</small><span class="price">18 ر.س</span></div></div>
-<div class="item"><img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=600&q=80"><div><b>V60 مختصة</b><small>تقطير يدوي</small><span class="price">26 ر.س</span></div></div>
-<div class="item"><img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=600&q=80"><div><b>موكا</b><small>قهوة وشوكولاتة بلجيكية</small><span class="price">22 ر.س</span></div></div>
-<div class="item"><img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?w=600&q=80"><div><b>اسبريسو</b><small>مركز وقوي</small><span class="price">14 ر.س</span></div></div>
-</div>
-</div>
-<div class="card">
-<h3>🧊 مشروبات باردة</h3>
-<div class="menu">
-<div class="item"><img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=600&q=80"><div><b>آيس لاتيه</b><small>منعش وخفيف</small><span class="price">22 ر.س</span></div></div>
-<div class="item"><img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&q=80"><div><b>سبانيش لاتيه</b><small>حليب مكثف</small><span class="price">24 ر.س</span></div></div>
-<div class="item"><img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=600&q=80"><div><b>فرابتشينو كراميل</b><small>مثلج وحلو</small><span class="price">25 ر.س</span></div></div>
+<div class="section" id="menu">
+<h2>منيو القهوة</h2>
+<div class="cards">
+<div class="card"><div class="icon">☕</div><h3>قهوة عربية</h3><p>قهوة سعودية أصيلة بالهيل</p><p class="price">15 ريال</p></div>
+<div class="card"><div class="icon">🥛</div><h3>لاتيه</h3><p>اسبريسو مع حليب مبخر</p><p class="price">18 ريال</p></div>
+<div class="card"><div class="icon">🧊</div><h3>آيس لاتيه</h3><p>قهوة باردة ومنعشة</p><p class="price">20 ريال</p></div>
+<div class="card"><div class="icon">🍫</div><h3>موكا</h3><p>قهوة مع شوكولاتة بلجيكية</p><p class="price">22 ريال</p></div>
+<div class="card"><div class="icon">🥐</div><h3>كرواسون</h3><p>يُقدم مع القهوة</p><p class="price">12 ريال</p></div>
+<div class="card"><div class="icon">🍰</div><h3>تشيز كيك</h3><p>حلا اليوم</p><p class="price">25 ريال</p></div>
 </div>
 </div>
-<div class="card">
-<h3>🍰 الحلا</h3>
-<div class="menu">
-<div class="item"><img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=600&q=80"><div><b>تشيز كيك لوتس</b><small>الأكثر طلباً</small><span class="price">28 ر.س</span></div></div>
-<div class="item"><img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=600&q=80"><div><b>براونيز دافئ</b><small>مع آيس كريم</small><span class="price">26 ر.س</span></div></div>
-<div class="item"><img src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?w=600&q=80"><div><b>تيراميسو</b><small>إيطالي أصلي</small><span class="price">30 ر.س</span></div></div>
+<div class="section" id="about">
+<h2>ليش مزاج؟</h2>
+<div class="cards">
+<div class="card"><div class="icon">🌱</div><h3>بن مختص</h3><p>نختار أجود أنواع البن</p></div>
+<div class="card"><div class="icon">🔥</div><h3>تحميص طازج</h3><p>نحمص كل يوم</p></div>
+<div class="card"><div class="icon">❤️</div><h3>على مزاجك</h3><p>نجهزها مثل ما تحبها</p></div>
 </div>
 </div>
-<div class="card">
-<h3>📸 أجواء مزاج</h3>
-<div class="gallery">
-<img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=600&q=80">
-<img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=600&q=80">
-<img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=600&q=80">
-</div>
-<p style="text-align:center;line-height:2;margin-top:15px">جلسات هادية للشغل والدراسة، واي فاي سريع، وتوصيل لباب البيت. مفتوح يومياً 6 صباحاً - 12 منتصف الليل</p>
-</div>
-</div>
-<div class="footer">© 2026 كوفي مزاج - صُنع بحب ☕</div>
+<footer>© 2026 مزاج - جميع الحقوق محفوظة</footer>
 </body>
 </html>
